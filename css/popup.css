@@ -1,0 +1,41 @@
+#ninja-forms-modal-54, 
+#ninja-forms-modal-54 .nf-modal-content,
+#ninja-forms-modal-54 input{
+	background: #0f5b94;
+	color: #f9f7f7;
+}
+
+#ninja-forms-modal-54 input{
+	border-radius: 10px;
+	float: right;
+}
+#ninja-forms-modal-54 input[type='text']{
+	width: 225px !important;
+}
+
+#ninja_forms_field_237{
+	background: #178ff0;
+	border-color: #178ff0;
+}
+#ninja_forms_field_237:hover{
+	background: #178ff0;
+}
+
+#ninja_forms_field_238_div_wrap, #ninja_forms_form_54{
+	width: 50%;
+	float: left;
+}
+
+#ninja_forms_field_238_div_wrap p{
+	padding-bottom: 0;
+	color:  #f9f7f7;
+	font-size: 16px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+}
+
+#ninja_forms_field_238_div_wrap h3{
+	color: #f9f7f7;
+	margin: 20px 0 0;
+	font-size: 24px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+}

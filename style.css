@@ -1,0 +1,648 @@
+/*
+Theme Name: Divi Child Theme
+Description: A child theme to house custom coding which modifies the Divi parent theme by Elegant Themes. Includes default line numbers where the code was taken from in the parent theme.
+Author:   Brad Dalton http://wpsites.net
+Template: Divi
+*/
+@import url("../Divi/style.css");
+@import url("css/ninja-forms-style.css");
+@import url("css/popup.css");
+
+/* кнопки и прочие баттоны
+ Стиль инпута, как у стандартной формы (нужно добавить клас native-input) */
+input[type='text'].native-input {
+  background-color: #eee;
+  border: none !important;
+  width: auto !important;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  font-size: 14px;
+  color: #999 !important;
+  padding: 16px !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.et_pb_contact_submit, .white-btn {
+  color: white !important;
+  border-color: white !important;
+  background-color: transparent !important;
+}
+input[type='submit'] {
+  cursor: pointer
+}
+;
+
+.ninja-forms-form {
+  width: 100% !important;
+}
+.ninja-forms-form .submit-wrap {
+  margin: 20px 0 0 !important;
+}
+
+/*Настройка переключателя языка*/
+#lang-widget-area {
+  float: right;
+}
+#lang-widget-area li {
+  display: inline-block;
+}
+
+/*Крупный заголовок на главной странице во втором слайде*/
+.offer_48px {
+  font-family: Open Sans;
+  font-weight: 100;
+  text-align: center;
+  line-height: 50%;
+  font-size: 48px;
+  color: #FFFFFF;
+  color: rgb(255, 255, 255);
+}
+
+/******teza-2-form******/
+.gravy_teza {
+  width: 100%;
+}
+.gravy_teza ul {
+  margin: 0;
+  padding: 0;
+}
+.gravy_teza ul li {
+  margin-bottom: 22px;
+}
+.gravy_teza>.validation_error {
+  display: none;
+}
+.gravy_teza_name label, .gravy_teza_phone label, .gravy_teza_city label, .gravy_teza_project label {
+  display: none !important;
+}
+.gravy_teza li {
+  list-style: none;
+}
+.gravy_teza_name input, .gravy_teza_phone input, .gravy_teza_city input {
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.85);
+  border-radius: 5px;
+  background: rgba(252,252,252,0);
+  color: #fff;
+  transition: border-color ease .5s;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#input_1_2:hover {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+#input_1_3:hover {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+.gravy_teza input:focus {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+  color: #fff;
+}
+.gravy_teza input::-webkit-input-placeholder {
+  color: #fff;
+}
+.gravy_teza input::-moz-placeholder {
+  color: #fff;
+}
+.gravy_teza .gfield_error input {
+  color: #fff;
+  border: 2px solid #ff1d25;
+}
+.gravy_teza_project .ginput_container {
+  margin-bottom: 22px;
+  font-size: 16px;
+  height: 57px;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.85);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, .0) url(http://destreet.com/wp-content/uploads/2015/05/arr_gravy_form.png) no-repeat;
+  background-position: right 10px center;
+  color: #fff;
+  overflow: hidden;
+  transition: border-color ease .5s;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.gravy_teza_project select {
+display: inline-block;
+  border: none;
+  padding: 15px;
+  background: transparent;
+  font-size: 16px;
+  -webkit-appearance: none;
+  width: 100%;
+  color: #fff;
+  outline: 0;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.gravy_teza_project option {
+  background: #2791d4;
+  border-radius: 4px;
+}
+.gravy_teza input[type="submit"] {
+  padding: 10px 18px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  width: 170px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .0);
+  color: #fff;
+  float: right;
+  font-weight: bold;
+}
+
+
+ 							/*Формы на стр. Контакты Обратный звонок*/
+.Viber 
+	{float: left;
+	margin-top: 15px;
+}
+#ninja_forms_form_40_cont #ninja_forms_field_222 
+	{height: 40px !important; 
+	background: rgba(7, 91, 151, 0); 
+	border: 1px solid #fff; 
+	color: #fff;
+	font-weight: 100;
+	font-size: 16px;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_form_40_cont #ninja_forms_field_222:hover {
+  background: rgba(0,0,0,0.1);
+}
+#ninja_forms_form_40_cont #ninja_forms_field_222:focus {
+  background: rgba(0,0,0,0.1);
+}
+
+#ninja_forms_form_40_cont #ninja_forms_field_225
+	{height: 40px !important; 
+	background: rgba(7, 91, 151, 0); 
+	border: 1px solid #fff; 
+	color: #fff;
+	font-weight: 100;
+	font-size: 16px;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_form_40_cont #ninja_forms_field_225:hover {
+  background: rgba(0,0,0,0.1);
+}
+#ninja_forms_form_40_cont #ninja_forms_field_225:focus {
+  background: rgba(0,0,0,0.1);
+}
+
+#nf_submit_40 .Submit_button 
+	{  background-color: #008FF5;
+  	border-radius: 3px;
+  	color: #FFFFFF;
+  	font-size: 16px;
+  	font-weight: 100;
+ 	 padding: 5px 20px;
+	  border: none;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#nf_submit_40 #ninja_forms_field_229
+	{  background-color: #008FF5;
+  	border-radius: 3px;
+  	color: #FFFFFF;
+  	font-size: 16px;
+  	font-weight: 100;
+ 	 padding: 5px 20px;
+	  border: none;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#nf_submit_40 .Submit_button:hover 
+	{background-color: #0087E7;
+  	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);}
+#ninja_forms_field_225::-webkit-input-placeholder { color: #fff; }
+#ninja_forms_field_225::-moz-placeholder { color: #fff; }
+
+                					 /*Формы на стр. Контакты Оставьте заявку*/
+#ninja_forms_form_42_cont #ninja_forms_field_226 
+	{height: 40px !important; 
+	background: rgba(7, 91, 151, 0); 
+	border: 1px solid #fff; 
+	color: #fff;
+	font-weight: 100;
+	font-size: 16px;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_form_42_cont #ninja_forms_field_226:hover {
+  background: rgba(0,0,0,0.1);
+}
+#ninja_forms_form_42_cont #ninja_forms_field_226:focus {
+  background: rgba(0,0,0,0.1);
+}
+
+#ninja_forms_form_42_cont #ninja_forms_field_227
+	{height: 40px !important; 
+	background: rgba(7, 91, 151, 0); 
+	border: 1px solid #fff; 
+	color: #fff;
+	font-weight: 100;
+	font-size: 16px;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_form_42_cont #ninja_forms_field_227:hover {
+  background: rgba(0,0,0,0.1);
+}
+#ninja_forms_form_42_cont #ninja_forms_field_227:focus {
+  background: rgba(0,0,0,0.1);
+}
+
+#ninja_forms_field_228_div_wrap #ninja_forms_field_228 
+	{background: rgba(7, 91, 151, 0); 
+	border: 1px solid #fff; 
+	color: #fff;
+	font-weight: 100;
+	font-size: 16px;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_field_228_div_wrap #ninja_forms_field_228:hover {
+  background: rgba(0,0,0,0.1);
+}
+#ninja_forms_field_228_div_wrap #ninja_forms_field_228:focus {
+  background: rgba(0,0,0,0.1);
+}
+
+#nf_submit_42 .Submit_button 
+	{  background-color: #008FF5;
+  	border-radius: 3px;
+  	color: #FFFFFF;
+  	font-size: 16px;
+  	font-weight: 100;
+ 	 padding: 5px 20px;
+	  border: none;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#nf_submit_42 .Submit_button 
+	{  background-color: #008FF5;
+  	border-radius: 3px;
+  	color: #FFFFFF;
+  	font-size: 16px;
+  	font-weight: 100;
+ 	 padding: 5px 20px;
+	  border: none;
+-webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#nf_submit_42 .Submit_button:hover 
+	{background-color: #0087E7;
+  	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);}
+								/*Стиль для Jivosite*/
+#jivo-label.jivo-fixed-bottom #jivo-label-wrapper {
+	background-color: rgb(0, 54, 79);
+	border-radius: 0 30px 0 0;
+}
+.jivo-top-right-square .jivo-bottom-left-square {
+	background-color: rgb(31, 148, 198) !important;
+}
+body #inner-chat {
+	background: rgb(0, 54, 79);
+	border-top-right-radius: 50px !important;
+}
+#jivo_iframe_wrap, #jivo_iframe_placeholder {
+	background-color: #00364F;
+	border-radius: 0 30px 0 0;}
+							/*Формы на стр. Портфолио*/
+#ninja_forms_form_14_cont #ninja_forms_field_204 
+	{
+        display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  padding: 10px !important;
+  border: 1px solid rgba(255,255,255,0.85) !important;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255,255,255,1) !important;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,0);
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_form_14_cont #ninja_forms_field_204:hover {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1) !important;
+}
+#ninja_forms_form_14_cont #ninja_forms_field_204:focus {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+
+#ninja_forms_field_205_div_wrap #ninja_forms_field_205 {
+	display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  padding: 10px !important;
+  border: 1px solid rgba(255,255,255,0.85) !important;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255,255,255,1) !important;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,0);
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_field_205_div_wrap #ninja_forms_field_205:hover {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1) !important;
+}
+#ninja_forms_field_205_div_wrap #ninja_forms_field_205:focus {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+#ninja_forms_form_14_cont #ninja_forms_field_208 {
+	display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px 20px !important;
+  border: 2px solid rgba(255,255,255,0.99);
+  -webkit-border-radius: 1px;
+  border-radius: 1px !important;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,0);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#ninja_forms_form_14_cont #ninja_forms_field_208:hover {
+  background: rgba(0,0,0,0.1) !important;
+}
+						/*Формы на стр. Teza*/				
+.gravy_teza_name input, .gravy_teza_phone input, .gravy_teza_city input {
+  	border: 1px solid #fff;}
+.gravy_teza_project .ginput_container {
+  border: 1px solid #fff !important;}
+#gform_submit_button_1 {
+ display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 16px 30px 15px !important;
+  border: 2px solid rgba(255,255,255,0.99);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,0);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#gform_submit_button_1:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+									/*Цены таблица*/
+table {width: 90% !important;
+	border: none;
+	margin: 0 auto 15px auto;}
+tr td {border-bottom: 1px solid rgba(248, 117, 1, 0.15) !important;}
+
+							/*Форма Сайты, которые смотрятся дорого*/
+
+#ninja_forms_field_230, #ninja_forms_field_232 {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  padding: 16px !important;
+  border: 1px solid rgba(255,255,255,0.85);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,0);
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#ninja_forms_field_232:hover {
+  border: 1px solid rgba(255,255,255,1);
+}
+
+#ninja_forms_field_232:focus {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+#ninja_forms_field_230:hover {
+  border: 1px solid rgba(255,255,255,1);
+}
+
+#ninja_forms_field_230:focus {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+
+#ninja_forms_field_233 {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 16px 30px 15px !important;
+  border: 2px solid rgba(255,255,255,0.99);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,0);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#ninja_forms_field_233:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+							/*Форма Teza*/
+#input_1_1 {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: border-box;
+  padding: 16px !important;
+  border: 1px solid rgba(255,255,255,0.85);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252,252,252,0);
+  -webkit-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#input_1_1:hover {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+#input_1_1:focus {
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,1);
+}
+				/*Буклеты*/
+
+.titleb p:nth-child(1) {
+  padding-bottom: 1em;
+  padding: 2px 5px;
+  display: inline-block;
+  margin-right: 30%;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: -5px;}
+				/*Лайтбокс*/
+#lightbox-container-image-box {
+    margin-top: 7% !important;
+}
+						/*popUp*/
+
+.form-body {
+    width: 680px;
+    margin: 0 auto;
+    background: #135C96;
+  padding:50px;
+  border-radius:15px;
+  position: fixed;
+    top: 30%;
+    left: 25%;
+}
+.kontakt {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+}
+.kontakt input {
+    width: 225px;
+    float: right;
+     margin: 10px 0 ;
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+  border-radius: 8px;
+    color: rgba(255,255,255,1);
+    background: rgba(252,252,252,0);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.kontakt input:focus {
+  background: rgba(0,0,0,0.15);
+}
+.btn-form {
+    margin: 10px 0;
+    display: block;
+    float: right;
+    width: 123px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0;
+    background-color: #1D91F3;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.btn-form:hover {box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);}
+.text-mesage {
+width: 50%;
+    float: left;
+        color: #fff;
+}
+.clear {clear: both;}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.close img {
+    width: 15px;
+}
+#form {display: none;}
+.classs {
+display: block;
+width: 100px;
+}
