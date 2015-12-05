@@ -46,15 +46,6 @@ function divi_portfolio_post_type() {
 	
 }
 
-function modify_popup() {
-	wp_enqueue_script(
-		'modify_popup',
-		get_stylesheet_directory_uri() . '/js/modify_popup.js',
-		array('jquery')
-	);
-}
-add_action('wp_enqueue_scripts', 'modify_popup');
-
 //* Change the number of portfolio items to be displayed (props Brad Dalton)
 add_action( 'pre_get_posts', 'divi_portfolio_items' );
 function divi_portfolio_items( $query ) {
@@ -64,6 +55,17 @@ function divi_portfolio_items( $query ) {
 	}
 
 }
+// Добаляю JS для модификации модального окна
+// TODO Сделать проверку на наличие shortcode 
+function modify_popup() {
+	wp_enqueue_script(
+		'modify_popup',
+		get_stylesheet_directory_uri() . '/js/modify_popup.js',
+		array('jquery')
+	);
+}
+add_action('wp_enqueue_scripts', 'modify_popup');
+
 function destreet_widgets_init() {
     register_sidebar(array(
         'name' => __('Для языка'),
