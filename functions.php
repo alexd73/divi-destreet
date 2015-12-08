@@ -1,4 +1,5 @@
 <?php
+include_once 'includes/shortcodes.php';
 
 //* Create Portfolio Type custom taxonomy
 add_action( 'init', 'divi_type_taxonomy' );
