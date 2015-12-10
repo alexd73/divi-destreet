@@ -3,17 +3,15 @@
     overflow: hidden;
     margin: 50px 0;
 }
-.mine {
-    width: 980px;
-    margin: 0 auto;
+#post-3301 .et_pb_all_tabs {
     background-color: #3EA4EF;
     height: 1060px;
     color: #fff;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
 }
-.mine .next, .first {
-        height: 470px;
+#post-3301 .et_pb_all_tabs .next, .first {
+    height: 470px;
     padding-top: 60px;
 }
 .col-md-4 {
@@ -24,7 +22,7 @@
 .md-offset-90 {
     margin-left: 110px;
 }
-.selectf {
+input[type=text].selectf {
     width: 210px;
     height: 36px;
     border-radius: 5px;
@@ -68,7 +66,7 @@
     padding: 0 20% 0 5px;
     font-weight: 700;
 }
-.btn-form {
+#post-3301 .btn-form {
     display: block;
     margin: 0 auto;
     width: 280px;
@@ -80,6 +78,8 @@
     color: #fff;
     font-size: 22px;
     cursor: pointer;
+    clear: both;
+    float: none;
 }
 .jq-checkbox.checked .jq-checkbox__div {
     background: #fff;
@@ -97,10 +97,8 @@
         margin: 40px auto;
     display: block;
 }
-.next h1, p {
-    text-align: center;
-}
-.first h1, p {
+.next h1, p, .first h1, p {
+    color: #fff;
     text-align: center;
 }
 .phone {
