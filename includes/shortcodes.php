@@ -20,12 +20,11 @@ class feedback_shortcode
 		wp_enqueue_style('feedback');
 		self::$add_script = true; 
 		extract( shortcode_atts( array(
-	      'tab' => 'booklet',
+	      'tab' => 'book',
 	    ), $attrs ) );
+        include 'feedback_forms.php';
+        return ${$tab . '_form'};
 
-	    include_once 'feedback_forms.php';
-
-		return $booklet_form;
 	}
 
 	static function register_script_style() {
@@ -39,7 +38,7 @@ class feedback_shortcode
  
 	static function print_script () {
 		if ( !self::$add_script ) return;
-//		wp_enqueue_script('feedback_send');
+		wp_enqueue_script('feedback_send');
 		wp_enqueue_script('formstyler');
 		wp_enqueue_script('form-func');
 	}

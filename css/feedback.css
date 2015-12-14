@@ -1,18 +1,28 @@
-.form-block-book, .form-block-site, .form-block-kalendar, .form-block-reklama {
+/*.form-block-book, .form-block-site, .form-block-kalendar, .form-block-reklama {
     height: 530px;
     overflow: hidden;
     margin: 50px 0;
-}
-#post-3301 .et_pb_all_tabs {
+}*/
+
+#post-3301 form {
+    width: 980px;
+    margin: 0 auto;
     background-color: #3EA4EF;
     height: 1060px;
     color: #fff;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
 }
-#post-3301 .et_pb_all_tabs .next, .first {
+
+#post-3301 .et_pb_all_tabs {
+    background-color: #3EA4EF;
+    height: 530px;
+    overflow: hidden;
+    color: #fff;
+}
+#post-3301 .et_pb_all_tabs .next, #post-3301 .et_pb_all_tabs .first {
     height: 470px;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 .col-md-4 {
     width: 211px;

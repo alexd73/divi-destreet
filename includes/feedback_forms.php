@@ -1,5 +1,5 @@
 <?php
-$booklet_form = '<form id="form-booklet">
+$book_form = '<form id="form-booklet">
     <div class="first">
         <h1>Узнай цену. Сравни. Оцените разницу.</h1>
         <div class="col-md-4 md-offset-90">
@@ -82,8 +82,7 @@ $booklet_form = '<form id="form-booklet">
     </div>
 </form>';
 
-$cal_form = '
-<form id="form-kalendar">
+$cal_form = '<form id="form-kalendar">
     <div class="first">
         <h1>Узнай цену. Сравни. Оцените разницу.</h1>
         <div class="col-md-4 md-offset-90">
