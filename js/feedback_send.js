@@ -1,5 +1,5 @@
 (function ($) {
-    var forms = $('#form-booklet, #form-kalendar, #form-reklam, #form-site');
+    var forms = $('#form-booklet, #form-kalendar, #form-ad, #form-site');
     $(function () {
         $('input, select').styler();
     });
@@ -14,9 +14,10 @@
                 url: phpfile,
                 data: $(this).serialize()
             }).done(function () {
-                $(this).find('input').val('');
-                alert('Спасибо за заявку! Скоро мы с вами свяжемся.');
-                $('#form').trigger('reset');
+                divNext = $('#' + id + ' .next');
+                divNext.children().fadeOut(1000);
+                divNext.append('<p>Спасибо за заявку! Скоро мы с вами свяжемся.</p>').css('font-size', '14pt');
+                divNext.append('<p><a class="et_pb_button et_pb_promo_button" href="/">Перейти на главную страницу.</a></p>');
             });
             return false;
         });
@@ -36,8 +37,8 @@
             $('#form-kalendar').css('marginTop', '-530px');
         });
         //Реклама
-        $('#form-reklama .next-btn').click(function () {
-            $('#form-reklama').css('marginTop', '-530px');
+        $('#form-ad .next-btn').click(function () {
+            $('#form-ad').css('marginTop', '-530px');
         });
 
     });

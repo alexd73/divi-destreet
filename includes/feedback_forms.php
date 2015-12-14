@@ -154,7 +154,7 @@ $cal_form = '<form id="form-kalendar">
 </form>';
 
 $ad_form = '
-<form id="form-reklam">
+<form id="form-ad">
     <div class="first">
         <h1>Узнай цену. Сравни. Оцените разницу.</h1>
         <div class="col-md-4 md-offset-90">
